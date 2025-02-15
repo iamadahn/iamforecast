@@ -544,31 +544,31 @@ void time_and_date_widget_update(struct time_and_date_widget *widget, struct tm 
     
     switch (time->tm_wday) {
         case 0:
-        lv_label_set_text(widget->day_of_week_label, "Monday");
+        lv_label_set_text(widget->day_of_week_label, "Sunday");
         break;
 
         case 1:
-        lv_label_set_text(widget->day_of_week_label, "Tuesday");
+        lv_label_set_text(widget->day_of_week_label, "Monday");
         break;
 
         case 2:
-        lv_label_set_text(widget->day_of_week_label, "Wednesday");
+        lv_label_set_text(widget->day_of_week_label, "Tuesday");
         break;
 
         case 3:
-        lv_label_set_text(widget->day_of_week_label, "Thursday");
+        lv_label_set_text(widget->day_of_week_label, "Wednesday");
         break;
 
         case 4:
-        lv_label_set_text(widget->day_of_week_label, "Friday");
+        lv_label_set_text(widget->day_of_week_label, "Thursday");
         break;
 
         case 5:
-        lv_label_set_text(widget->day_of_week_label, "Saturday");
+        lv_label_set_text(widget->day_of_week_label, "Friday");
         break;
 
         case 6:
-        lv_label_set_text(widget->day_of_week_label, "Sunday");
+        lv_label_set_text(widget->day_of_week_label, "Saturday");
         break;
     }
 }
