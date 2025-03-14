@@ -201,7 +201,7 @@ int forecast_sntp_sync(void) {
 	struct sntp_time now;
 	struct timespec tspec;
 
-	ret = sntp_simple(SNTP_SERVER, SYS_FOREVER_MS, &now);
+	ret = sntp_simple(SNTP_SERVER, 1000, &now);
     if (ret != 0) {
         LOG_ERR("SNTP sync error - %d code", ret);
         return -1;
